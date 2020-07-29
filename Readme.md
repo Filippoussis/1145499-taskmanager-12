@@ -1,7 +1,7 @@
 # Личный проект «Менеджер задач» [![Build status][travis-image]][travis-url]
 
 * Студент: [Андрей Филиппов](https://up.htmlacademy.ru/ecmascript/12/user/1145499).
-* Наставник: `Неизвестно`.
+* Наставник: [Даниил Царёв](https://htmlacademy.ru/profile/id945835).
 
 ---
 
