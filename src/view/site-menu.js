@@ -1,8 +1,10 @@
+import {createElement} from "../utils.js";
+
 /**
  * создает шаблон меню сайта
  * @return {string} возвращает HTML-строку в ввиде кода HTML
  */
-export const createSiteMenuTemplate = () => {
+const createSiteMenuTemplate = () => {
   return (
     `<section class="control__btn-wrap">
       <input
@@ -34,3 +36,25 @@ export const createSiteMenuTemplate = () => {
     </section>`
   );
 };
+
+export default class SiteMenu {
+  constructor() {
+    this._element = null;
+  }
+
+  _getTemplate() {
+    return createSiteMenuTemplate();
+  }
+
+  getElement() {
+    if (!this._element) {
+      this._element = createElement(this._getTemplate());
+    }
+
+    return this._element;
+  }
+
+  removeElement() {
+    this._element = null;
+  }
+}
