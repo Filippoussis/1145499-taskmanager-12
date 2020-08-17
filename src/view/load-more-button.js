@@ -1,26 +1,22 @@
 import {createElement} from "../utils.js";
 
 /**
- * создает шаблон сортировки задач
+ * создает шаблон кнопки
  * @return {string} возвращает HTML-строку в ввиде кода HTML
  */
-const createSortTemplate = () => {
+const createLoadMoreButtonTemplate = () => {
   return (
-    `<div class="board__filter-list">
-      <a href="#" class="board__filter">SORT BY DEFAULT</a>
-      <a href="#" class="board__filter">SORT BY DATE up</a>
-      <a href="#" class="board__filter">SORT BY DATE down</a>
-    </div>`
+    `<button class="load-more" type="button">load more</button>`
   );
 };
 
-export default class Sort {
+export default class LoadMoreButton {
   constructor() {
     this._element = null;
   }
 
   _getTemplate() {
-    return createSortTemplate();
+    return createLoadMoreButtonTemplate();
   }
 
   getElement() {
