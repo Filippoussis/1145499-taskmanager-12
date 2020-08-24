@@ -1,5 +1,5 @@
 import {COLORS} from "../const.js";
-import {getRandomInteger} from "../utils.js";
+import {getRandomInteger} from "../utils/common.js";
 
 /**
  * генерирует случайное описание задачи из произвольного массива значений
